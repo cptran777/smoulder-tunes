@@ -1,0 +1,22 @@
+$text-color: red;
+
+/* Basic Implementation of containing the application within the specified window size */
+html, body, .ember-application > .ember-view, #app-container {
+  height: 100%;
+  width: 100%;
+}
+
+/****************** TOP BANNER STYLING *********************/
+
+#app-header {
+  color: blue;
+}
+
+/***************** MAIN WINDOW STYLING *********************/
+
+
+/******************* FOOTER STYLING ***********************/
+
+#app-footer {
+  color: $text-color;
+}
