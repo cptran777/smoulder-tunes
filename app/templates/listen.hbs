@@ -1,0 +1,10 @@
+<div id="hey-look" class="container-fluid">
+  {{#each model as |song|}}
+    <div class="row song">{{song.title}} by {{song.artist}}</div>
+    <audio controls>
+      <source src={{song.source}} type="audio/mpeg" >
+    </audio>
+  {{/each}}
+</div>
+
+{{outlet}}
