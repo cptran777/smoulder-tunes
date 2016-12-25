@@ -12,9 +12,13 @@ export default Ember.Controller.extend({
     title: 'Last Wanderer',
     source: 'http://127.0.0.1:8000/media?name=10034897'
   },
+  songQueue: [],
   actions: {
     newSong(song) {
       this.set('currentSong', song);
+    },
+    addQueue(song) {
+      this.set('songQueue', this.songQueue.concat(song));
     }
   }
 });

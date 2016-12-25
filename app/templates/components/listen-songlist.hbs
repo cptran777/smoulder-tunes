@@ -1,6 +1,8 @@
+<h4>Songlist</h4>
 {{#each songlist as |song|}}
   <div class="row song-entry">
     <div class="col-xs-8 col-sm-8 col-md-8">{{song.title}} by {{song.artist}}</div>
-    <div class="col-xs-4 col-sm-4 col-md-4" {{action 'playSong' song}}>Play</div>
+    <div class="col-xs-2 col-sm-2 col-md-2" {{action 'playSong' song}}>Play</div>
+    <div class="col-xs-2 col-sm-2 col-md-2" {{action 'queueSong' song}}>Queue Up</div>
   </div>
 {{/each}}
