@@ -1,10 +1,10 @@
 <div id="hey-look" class="container-fluid">
-  {{#each model as |song|}}
-    <div class="row song">{{song.title}} by {{song.artist}}</div>
-    <audio controls>
-      <source src={{song.source}} type="audio/mpeg" >
-    </audio>
-  {{/each}}
+  {{listen-player class="row" id="music-player" currentSong=currentSong}}
+  <div class="row">
+    <p>mytest: {{mytest}}</p>
+    <div {{action 'newSong' nextSong}} id="listen-queue" class="col-sm-12 col-sm-push-8 col-md-4">queue</div>  
+    <div id="listen-list" class="col-sm-12 col-sm-pull-4 col-md-8">list</div>
+  </div>
 </div>
 
 {{outlet}}

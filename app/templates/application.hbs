@@ -1,12 +1,25 @@
-<div id="app-container" className="container-fluid">
-  <header id="app-header">
-    This is the header.
-    {{#link-to 'listen' class="button"}}Listen!{{/link-to}}
+<div id="app-container" class="container-fluid">
+  <header id="app-header" class="row">
+    <div id="logo-banner" class="col-xs-12 col-sm-12 col-md-12">
+      This is the logo.
+    </div>
+    <nav id="nav-banner" class="row">
+      <div class="col-xs-12 col-sm-3 col-md-3">
+        {{#link-to 'listen' class="button"}}Listen!{{/link-to}}
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3">
+        Placeholder
+      </div><div class="col-xs-12 col-sm-3 col-md-3">
+        Placeholder
+      </div><div class="col-xs-12 col-sm-3 col-md-3">
+        Placeholder
+      </div>
+    </nav>
   </header>
-  <main id="app-body">
+  <main id="app-body" class="row">
     {{outlet}}
   </main>
-  <footer id="app-footer">
+  <footer id="app-footer" class="row">
     This is the footer
   </footer>
 
