@@ -5,8 +5,6 @@
     {{listen-queue id="listen-queue" class="col-sm-12 col-sm-push-8 col-md-4" queueList=songQueue playSong=(action 'playFromQueue')}}
     {{listen-songlist id="listen-list" class="col-sm-12 col-sm-pull-4 col-md-8" 
       songlist=model newSong=(action 'newSong') addQueue=(action 'addQueue')}}
-    <div {{action 'newSong' nextSong}} id="listen-queue" class="col-sm-12 col-sm-push-8 col-md-4">queue</div>  
-    <div id="listen-list" class="col-sm-12 col-sm-pull-4 col-md-8"></div>
   </div>
 </div>
 
