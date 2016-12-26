@@ -18,7 +18,19 @@ export default Ember.Controller.extend({
       this.set('currentSong', song);
     },
     addQueue(song) {
-      this.set('songQueue', this.songQueue.concat(song));
+      song.set('idx', this.get('songQueue').length);
+      this.set('songQueue', this.get('songQueue').concat(song));
+    },
+    playFromQueue(idx) {
+      let queue = this.get('songQueue').slice();
+      let newSong = queue.splice(idx, 1)[0];
+
+      for (let x = 0; x < queue.length; x++) {
+        queue[x].set('idx', x);
+      }
+
+      this.set('songQueue', queue);
+      this.set('currentSong', newSong);
     }
   }
 });
