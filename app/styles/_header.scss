@@ -2,17 +2,47 @@
 
 #app-header {
   
-  color: blue;
+  color: white;
 
   #logo-banner {
-    text-align: center;
+
+    padding: 2% 1% 2% 1%;
+    background-color: rgba(145, 20, 20, 0.35);
+
+    div {
+      text-align: center;
+      background-image: url('../assets/images/smouldertunes.jpg');
+      background-size: 100% 100%;
+      padding: 3% 2% 3% 2%;
+      border-radius: 25px;
+
+      h1 {
+        font-family: Georgia, Arial, sans-serif;
+        font-weight: bold;
+      }
+
+    }
+
   }
 
   nav {
+
+    background-color: rgba(145, 20, 20, 0.6);
+
     div {
       text-align: center;
-      color: orange;
+      color: white;
+      padding: 0.5% 0 0.5% 0;
+      border-left: 2px solid black;
+      margin: 2px 0 2px 0;
+      background-color: rgba(130, 15, 15, 0.8);
     }
+
+    div:hover {
+      background-color: rgba(165, 40, 40, 1);
+      color: #333;
+    }
+
   }
 
 }
